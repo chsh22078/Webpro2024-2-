@@ -7,7 +7,7 @@ const App = () => {
   const [yakuList, setYakuList] = useState([]);
   const [selectedYaku, setSelectedYaku] = useState(null);
 
-  useEffect(() => 
+  useEffect(() => {
     
     fetch("/data/yakuList.json")
       .then((response) => response.json())
