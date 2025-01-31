@@ -7,8 +7,8 @@ const App = () => {
   const [yakuList, setYakuList] = useState([]);
   const [selectedYaku, setSelectedYaku] = useState(null);
 
-  useEffect(() => {
-    // 役リスト（37種類）をロード
+  useEffect(() => 
+    
     fetch("/data/yakuList.json")
       .then((response) => response.json())
       .then((data) => setYakuList(data))
